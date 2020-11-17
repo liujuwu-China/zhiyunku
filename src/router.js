@@ -14,18 +14,36 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Login.vue')
     },
+    
     {
       path: '/zhiyun',
       name: 'zhiyun',
       component: () => import( './views/Zhiyun.vue'),
       children:[{
         path:'zhu',
-        component: () => import( './components/workbench/Dataoverview.vue')
+        component: () => import( './components/workbench/Dataoverview.vue'),
       },
       {
         path:'zhu2',
-        component: () => import( './components/workbench/Ruku.vue')
-      }
+        component: () => import( './components/workbench/Ruku.vue'),
+      },
+      {
+        path:'zhu3',
+        component: () => import( './components/workbench/Chuku.vue')
+      },
+      {
+        path:'zhu4',
+        component: () => import( './components/workbench/pandian.vue')
+      },
+      {
+        path:'zhu5',
+        component: () => import( './components/workbench/Taizhang.vue')
+      },
+      {
+        path:'insert',
+        component:()=> import('./components/zsgc/Insert.vue')
+      },
+      
     ]
     },
     {

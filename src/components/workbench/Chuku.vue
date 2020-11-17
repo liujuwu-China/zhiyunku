@@ -116,9 +116,7 @@
         <div class="li-fr-fir-ri">
           <ul>
             <li>
-              <el-button class="input2" icon="el-icon-folder-add" plain>
-                <router-link tag="span" to="/zhiyun/insert">新增</router-link>
-              </el-button>
+              <el-button class="input2" icon="el-icon-folder-add" plain>新增</el-button>
             </li>
             <li>
               <el-button class="input2" icon="el-icon-edit" plain>编辑</el-button>
@@ -625,4 +623,3 @@ export default {
   width: 100%;
 }
 </style>
-

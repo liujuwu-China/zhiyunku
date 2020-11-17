@@ -69,13 +69,13 @@
         <ul>
           <li>
             <p>
-              <span>入库单号:</span>
+              <span>产品编号:</span>
               <el-input class="input1" v-model="input" placeholder="请输入内容"></el-input>
             </p>
           </li>
           <li>
             <p>
-              <span>单据类型:</span>
+              <span>产品名称:</span>
               <el-select v-model="value" placeholder="请选择">
                 <el-option
                   v-for="item in options"
@@ -88,7 +88,7 @@
           </li>
           <li>
             <p>
-              <span>入库单状态:</span>
+              <span>仓库:</span>
               <el-select v-model="value2" placeholder="请选择">
                 <el-option
                   v-for="item in options2"
@@ -116,9 +116,7 @@
         <div class="li-fr-fir-ri">
           <ul>
             <li>
-              <el-button class="input2" icon="el-icon-folder-add" plain>
-                <router-link tag="span" to="/zhiyun/insert">新增</router-link>
-              </el-button>
+              <el-button class="input2" icon="el-icon-folder-add" plain>新增</el-button>
             </li>
             <li>
               <el-button class="input2" icon="el-icon-edit" plain>编辑</el-button>
@@ -625,4 +623,3 @@ export default {
   width: 100%;
 }
 </style>
-

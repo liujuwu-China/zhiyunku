@@ -26,15 +26,21 @@
               <el-menu-item index="1-2">
                 <router-link tag="div" to="/zhiyun/zhu2">入库管理</router-link>
               </el-menu-item>
-              <el-menu-item index="1-3">出库管理</el-menu-item>
-              <el-menu-item index="1-4">盘点管理</el-menu-item>
+              <el-menu-item index="1-3">
+                 <router-link tag="div" to="/zhiyun/zhu3">出库管理</router-link>
+              </el-menu-item>
+              <el-menu-item index="1-4">
+                <router-link tag="div" to="/zhiyun/zhu4">盘点管理</router-link>
+              </el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group>
               <template slot="title">
                 <i class="el-icon-date"></i>
                 <span>报表分析</span>
               </template>
-              <el-menu-item index="1-5">仓库台账</el-menu-item>
+              <el-menu-item index="1-5">
+                <router-link tag="div" to="/zhiyun/zhu5">仓库台账</router-link>
+              </el-menu-item>
               <el-menu-item index="1-6">库存预警</el-menu-item>
               <el-menu-item index="1-7">库存清单</el-menu-item>
               <el-menu-item index="1-8">财务记账</el-menu-item>
